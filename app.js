@@ -16,7 +16,7 @@ function printInfo() {
 
     let myCity = myForm["cities"].value;
 
-    let streetPatern = /^[0-9]{1,6} [A-Za-z]{2,} st.$/
+    let streetPatern = /^[0-9]{1,6} [A-Za-z]{2,} [A-Za-z.]{2,3}$/
     let myAddress = myForm["address"].value;
     let resultStreet = streetPatern.test(myAddress);
 
