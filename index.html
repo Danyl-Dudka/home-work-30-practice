@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="my_info">
+        <input type="text" name="name" placeholder="Enter your name">
+        <br><br>
+
+        <input type="text" name="surname" placeholder="Enter your surname">
+        <br><br>
+
+        <label for="date_of_birth">Enter your date of birth</label>
+        <input type="date" name="date_of_birth">
+        <br><br>
+
+        <div>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+        <br><br>
+
+        <select name="cities">
+            <option value="-1">Select your city</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Paris">Paris</option>
+            <option value="Kyiv">Kyiv</option>
+        </select>
+        <br><br>
+
+        <label for="address">Enter your address in the format: 0 Name st. <br> <br>
+            0 - number of your street,
+            Name - street Name,
+            st. - street*
+        </label>
+        <br>
+        <br>
+        <textarea name="address" placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <div>
+            <input type="checkbox" name="languages" value="JavaScript"> JavaScript
+            <br>
+            <input type="checkbox" name="languages" value="TypeScript"> TypeScript
+            <br>
+            <input type="checkbox" name="languages" value="Python"> Python
+            <br>
+            <input type="checkbox" name="languages" value="PHP"> PHP
+            <br>
+        </div>
+        <br>
+        <button type="button" id="save_id">Save</button>
+    </form>
+
+    <div class="info_label hidden">
+        <div class="your_name"></div>
+        <div class="your_surname"></div>
+        <div class="your_dateofbirth"></div>
+        <div class="your_gender"></div>
+        <div class="your_city"></div>
+        <div class="your_address"></div>
+        <div class="your_languages"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

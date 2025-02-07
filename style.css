@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+}
+.info_label {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    border-radius: 45px;
+    margin-top: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    line-height: 60px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
